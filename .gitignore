@@ -1,0 +1,18 @@
+node_modules
+
+# Local development database and build artefacts
+.data
+*.tsbuildinfo
+next-env.d.ts
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# Script output files
+*-out.txt
+vm.txt
+vs.txt
+vv.txt
+tsc-out.txt

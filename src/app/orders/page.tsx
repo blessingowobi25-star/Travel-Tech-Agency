@@ -1,7 +1,7 @@
 import { requireUser } from '@/lib/session';
 import { listAttemptsForOrder } from '@/lib/payments/helpers';
 
-export default async function OrdersPage({ params }: { params: { reference: string } }) {
+export default async function OrdersPage({ params }: { params: any }) {
   'use server';
   const user = await requireUser('/login');
 

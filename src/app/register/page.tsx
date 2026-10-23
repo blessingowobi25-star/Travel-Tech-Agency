@@ -5,7 +5,7 @@ export default function RegisterPage() {
     <main className="min-h-screen bg-navy-900 text-ivory p-8">
       <div className="max-w-md mx-auto">
         <h2 className="text-3xl font-bold mb-6">Create account</h2>
-        <form className="space-y-4" onSubmit={(e: React.FormEvent<HTMLFormElement>) => {
+        <form className="space-y-4" onSubmit={async (e: React.FormEvent<HTMLFormElement>) => {
           e.preventDefault();
           const form = new FormData(e.target as HTMLFormElement);
           const result = await registerAction(

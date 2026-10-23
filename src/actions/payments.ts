@@ -20,7 +20,7 @@ export async function initiatePaymentAction(
   }
 
   // Check if order is payable
-  if (order.status !== OrderStatus.DRAFT && order.status !== OrderStatus.AWAITING_PAYMENT) {
+  if (order.status !== 'DRAFT' && order.status !== 'AWAITING_PAYMENT') {
     return { success: false, error: 'Order is not in a payable state.' };
   }
 

@@ -6,6 +6,8 @@ import {
   type QuoteItem,
   mapOrder,
 } from '@/types/domain';
+
+export type { OrderStatus };
 import { money } from './quotes';
 
 const ORDER_COLUMNS = `
